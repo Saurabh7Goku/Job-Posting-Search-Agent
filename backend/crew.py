@@ -16,9 +16,7 @@ class CompanyResearchCrew:
                 verbose = True,
                 temperature = 0.1,
                 google_api_key= os.environ["GEMINI_API_KEY"],
-                # convert_system_message_to_human=True
             )
-        # self.llm = ChatOpenAI(model="gpt-3.5-turbo-16k-0613", api_key="")
 
     def setup_crew(self, companies: list[str], positions: list[str]):
         agents = CompanyResearchAgents()
