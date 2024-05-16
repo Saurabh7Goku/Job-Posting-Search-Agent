@@ -15,7 +15,7 @@ class CompanyResearchCrew:
                 model = 'gemini-pro',
                 verbose = True,
                 temperature = 0.1,
-                google_api_key= os.environ["GEMINI_API_KEY"],
+                google_api_key= '',
             )
 
     def setup_crew(self, companies: list[str], positions: list[str]):
